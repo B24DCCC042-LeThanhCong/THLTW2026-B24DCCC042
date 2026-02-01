@@ -25,6 +25,12 @@
 		icon: 'HomeOutlined',
 	},
 	{
+  		path: '/quan-ly',
+  		name: 'Quản lý đơn hàng',
+  		component: './QuanLyDonHang',
+	},////quanlydonhang-bt2
+
+	{
 		path: '/gioi-thieu',
 		name: 'About',
 		component: './TienIch/GioiThieu',
