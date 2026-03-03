@@ -1,98 +1,65 @@
 ﻿export default [
-	{
-		path: '/user',
-		layout: false,
-		routes: [
-			{
-				path: '/user/login',
-				layout: false,
-				name: 'login',
-				component: './user/Login',
-			},
-			{
-				path: '/user',
-				redirect: '/user/login',
-			},
-		],
-	},
+  {
+    path: '/user',
+    layout: false,
+    routes: [
+      {
+        path: '/user/login',
+        layout: false,
+        name: 'login',
+        component: './user/Login',
+      },
+      {
+        path: '/user',
+        redirect: '/user/login',
+      },
+    ],
+  },
 
-	///////////////////////////////////
-	// DEFAULT MENU
-	{
-		path: '/dashboard',
-		name: 'Dashboard',
-		component: './TrangChu',
-		icon: 'HomeOutlined',
-	},
-	{
-  		path: '/quan-ly',
-  		name: 'Quản lý đơn hàng',
-  		component: './QuanLyDonHang',
-	},////quanlydonhang-bt2
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: './TrangChu',
+    icon: 'HomeOutlined',
+  },
 
-	{
-		path: '/gioi-thieu',
-		name: 'About',
-		component: './TienIch/GioiThieu',
-		hideInMenu: true,
-	},
-	{
-		path: '/random-user',
-		name: 'RandomUser',
-		component: './RandomUser',
-		icon: 'ArrowsAltOutlined',
-	},
+  {
+    path: '/quan-ly',
+    name: 'QuanLyDonHang',
+    component: './QuanLyDonHang',
+  },
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
+  {
+    path: '/gioi-thieu',
+    name: 'About',
+    component: './TienIch/GioiThieu',
+    hideInMenu: true,
+  },
 
-	{
-		path: '/notification',
-		routes: [
-			{
-				path: './subscribe',
-				exact: true,
-				component: './ThongBao/Subscribe',
-			},
-			{
-				path: './check',
-				exact: true,
-				component: './ThongBao/Check',
-			},
-			{
-				path: './',
-				exact: true,
-				component: './ThongBao/NotifOneSignal',
-			},
-		],
-		layout: false,
-		hideInMenu: true,
-	},
-	{
-		path: '/',
-	},
-	{
-		path: '/403',
-		component: './exception/403/403Page',
-		layout: false,
-	},
-	{
-		path: '/hold-on',
-		component: './exception/DangCapNhat',
-		layout: false,
-	},
-	{
-		component: './exception/404',
-	},
+  {
+    path: '/random-user',
+    name: 'RandomUser',
+    component: './RandomUser',
+  },
+
+  {
+    path: '/bai1',
+    name: 'Bai1DoanSo',
+    component: './Bai1_Doanso',
+  },
+
+  {
+    path: '/bai2',
+    name: 'Bai2QuanLyHocTap',
+    component: './Bai2_QuanLyHocTap',
+  },
+
+  {
+    path: '/',
+    redirect: '/dashboard',
+  },
+
+  {
+    component: './exception/404',
+  },
 ];
