@@ -43,17 +43,17 @@
   },
 
   {
-    path: '/bai1',
-    name: 'Bai1DoanSo',
-    component: './Bai1_Doanso',
+  path: '/oantuti',
+  name: 'Oẳn Tù Tì',
+  
+  component: '@/pages/TH02-Bai1_OanTuTi/index',
   },
-
   {
-    path: '/bai2',
-    name: 'Bai2QuanLyHocTap',
-    component: './Bai2_QuanLyHocTap',
+  path: '/quanlycauhoi',
+  name: 'Ngân hàng câu hỏi',
+  
+  component: '@/pages/TH02-Bai2_QuanLyNganHangCauHoi/index'
   },
-
   {
     path: '/',
     redirect: '/dashboard',
