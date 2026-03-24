@@ -36,6 +36,31 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+		///TH04
+
+	
+
+      {
+        path: '/quyet-dinh',
+        name: 'Quyết định',
+        component: './QuyetDinh',
+      },
+      {
+        path: '/cau-hinh',
+        name: 'Cấu hình biểu mẫu',
+        component: './CauHinhBieuMau',
+      },
+      {
+        path: '/van-bang',
+        name: 'Văn bằng',
+        component: './VanBang',
+      },
+      {
+        path: '/tra-cuu',
+        name: 'Tra cứu',
+        component: './TraCuu',
+      },
+  
 
 	// DANH MUC HE THONG
 	// {
@@ -90,3 +115,4 @@
 		component: './exception/404',
 	},
 ];
+
