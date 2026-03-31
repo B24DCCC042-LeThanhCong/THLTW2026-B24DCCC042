@@ -19,6 +19,26 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
+	  path: '/clubs',
+	  name: 'Clubs',
+	  component: './Clubs',
+	},
+	{
+	  path: '/applications',
+	  name: 'Applications',
+	  component: './Applications',
+	},
+	{
+	  path: '/members',
+  	name: 'Members',
+  	component: './Members',
+	},
+	{	
+ 	 path: '/reports',
+ 	 name: 'Reports',
+ 	 component: './Reports',
+	},
+	{
 		path: '/dashboard',
 		name: 'Dashboard',
 		component: './TrangChu',
