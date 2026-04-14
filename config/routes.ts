@@ -36,6 +36,11 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+  		path: '/khoahoc',
+		name: 'Quản Lý Khoá Học',
+  		component: './KhoaHoc',
+	},
 
 	// DANH MUC HE THONG
 	// {
