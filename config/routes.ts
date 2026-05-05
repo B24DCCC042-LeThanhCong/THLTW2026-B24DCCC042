@@ -19,12 +19,6 @@
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
-		path: '/dashboard',
-		name: 'Dashboard',
-		component: './TrangChu',
-		icon: 'HomeOutlined',
-	},
-	{
 		path: '/gioi-thieu',
 		name: 'About',
 		component: './TienIch/GioiThieu',
@@ -35,6 +29,21 @@
 		name: 'RandomUser',
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
+	},
+	{
+  	path: '/dashboard',
+  	name: 'Dashboard',
+  	component: './dashboard',
+	},
+	{
+ 	 path: '/kanban',
+ 	 name: 'Kanban',
+ 	 component: './Kanban',
+	},
+	{
+ 	 path: '/tasks',
+ 	 name: 'Task List',
+  	component: './TaskList',
 	},
 
 	// DANH MUC HE THONG
